@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MR Ftuits水果世界-火龙果</title>
+	<link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.fly.min.js"></script>
+    <script type="text/javascript" src="JS/requestAnimationFrame.js"></script>
+    <script type="text/javascript" src="JS/item.js"></script>
+    <script type="text/javascript" src="JS/product.js"></script>
+    <script type="text/javascript" src="JS/page.js"></script>
+    <script type="text/javascript" src="JS/regist.js"></script>
+</head>
+<body>
+  <aside>
+     <p>+0</p>
+     <img src="images/pic3.png" alt="">
+     <img src="images/pic4.png" alt="">
+     <img src="images/pic5.png" alt="">
+     <img src="images/pic6.png" alt="">
+     <img src="images/pic7.png" alt="">
+  </aside>
+  <header>
+	    <section id="logo">
+	        <h1>MR FRUIT</h1>
+	        <form action="" method="post">
+    				<input type="text" value="MR.FRUIT 乐在水果">
+    				<input type="button" value="搜索">
+	        </form>
+	    </section>
+      <!-- <div class="clear"></div> -->
+	    <h3>全部商品分类</h3>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li>
+              <a href="product.html">商品分类</a>
+                <ul>
+                  <li><a href="single-product.html">商品详情</a></li>
+                  <li><a href="product.html">进口水果</a></li>
+                  <li><a href="product.html">国产水果</a></li>
+                </ul>
+          </li>
+          <li>
+              <a href="news.html">新闻中心</a>
+              <ul>
+                <li><a href="single-news.html">新闻详情</a></li>
+                <li><a href="#">活动信息</a></li>
+                <li><a href="#">水果吃法</a></li>
+                <li><a href="#">团队合作</a></li>
+              </ul>
+          </li>
+          <li><a href="regist.html">登陆/注册</a></li>
+          <li><a href="contract.html">联系我们</a></li>
+        </ul>
+      </nav>
+	</header>    
+  <section class="green"></section>
+  <section id="regi">
+     <section id="re">
+        <section id="re-left">
+          <p>手机，ipad，微信下单选择预存款支付完成</p>
+          <figure>
+            <img src="images/code.jpg" alt="">
+          </figure>
+          <p>手机/微信下单</p>
+        </section>
+        <section id="re-right">
+            <h1>用户登录</h1>
+            <form action="" method="post" class="form01" name="form1">
+                <input type="text" name="user" value="用户名/邮箱地址/手机号"><br />
+                <input type="password" name="password" value="用户密码" ><br />
+                <input type="text" name="code" value="填写验证码">
+                <input type="text" name="coded" value="3522" id="code"> <a href="" id="change">看不清？换一个</a> <br />
+                <input type="checkbox" name="rember" value="记住账号" checked="checked">记住账号
+                <input type="checkbox" name="rember" value="记住账号">记住密码<br />
+                <input type="button" name="submit" value="登录"  onclick="chang(document.form1.user.value,document.form1.password.value,document.form1.code.value);">忘记密码？
+            </form>
+            <h2>还不会员 <a href="">免费注册</a></h2>
+        </section>
+     </section>
+  </section>
+  <footer>
+     <section id="pic">
+        <dl class="dl01 one"> 
+          <dt>自建物流</dt>
+          <dd>全程把控,新鲜到家</dd>
+        </dl>
+        <dl class="dl01 two">
+          <dt>VIP会员</dt>
+          <dd>定时,省心</dd>
+        </dl>
+        <dl class="dl01 three">
+          <dt>48小时退换</dt>
+          <dd>一对一,解答服务</dd>
+        </dl>
+     </section>
+     <section id="dir">
+        <ul>
+          <h3>新手指南</h3>
+          <li>订购方式</li>
+          <li>顾客须知</li>
+          <li>会员积分</li>
+          <li>预存款支付</li>
+          <li>用户注册</li>
+        </ul>
+        <ul>
+          <h3>购物指南</h3>
+          <li>联系客服</li>
+          <li>发票说明</li>
+          <li>用户常见问题</li>
+          <li>购物流程</li>
+          <li>手机订购</li>
+        </ul>
+        <ul>
+          <h3>支付配送方式</h3>
+          <li>礼品卡/账户余额</li>
+          <li>支付方式</li>
+          <li>订购出库时间</li>
+          <li>全国配送范围</li>
+          <li>货到付款</li>
+        </ul>
+        <ul>
+          <h3>公司简介</h3>
+          <li>招聘信息</li>
+          <li>联系我们</li>
+          <li>业务合作</li>
+          <li>关于我们</li>
+        </ul>
+     </section>
+  </footer>
+  <!--<script type="text/javascript">
+  	 var user_code = document.getElementById('code')
+     alert(user_code.id)
+     
+  </script>-->
+</body>
+</html>
